@@ -17,13 +17,14 @@ def student_task():
         print("average",average)
     
         return name, rollnumber, total,average
-result=student_task()
-print(result)
-
+        
 #add the students to the list
-students.append(student_task())
-students.append(student_task())
-students.append(student_task())
+while True:
+    students.append(student_task())
+    choice=input("do you want to add student:(yes/no)")
+    if choice != "yes":
+       break
+    
 
 #print all the students
 print("all the students:",students)
